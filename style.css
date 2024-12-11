@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #000000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #24272b;
+}
+
+#minhaDiv {
+  background: linear-gradient(to bottom, #000000, #24272b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 60vh;
+  color: aliceblue;
+  font-size: 100px;
+  font-family: "Tangerine", serif;
+}
+
+.div2 {
+  background: #37383a;
+  padding: 100px;
+  max-width: 900px;
+  margin-bottom: 300px;
+  color: aliceblue;
+  border-radius: 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.div3 {
+  padding: 150px;
+  margin: 150px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./image/imagen\ para\ html.webp"); /* Caminho da imagem de fundo */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  z-index: -1;
+  opacity: 9%;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  margin: 40px;
+  transition: transform 0.3s ease;
+}
+
+.icons:hover {
+  transform: scale(1.5);
+}
+
+/* Animação do texto */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#div2 {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: slideInFromRight 1.5s ease-out;
+  opacity: 0;
+}
