@@ -2,7 +2,7 @@ const envio = document.querySelector(".input");
 const botao = document.getElementById("botao");
 
 botao.addEventListener("click", () => {
-  fetch("http://localhost:3000/send-email", {
+  fetch("https://express-email-project.vercel.app/send-email", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
