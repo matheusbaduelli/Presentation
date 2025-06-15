@@ -112,13 +112,37 @@ img {
   
 
   .img {
-    img {
-      width: 300px;
-      height: 300px;
-    }
+    
+    width: 300px;
+    height: 300px;
+    
   }
 
   #minhaDiv {
     font-size: 50px;
   }
+}
+
+
+.input{
+  width: 400px;
+  height: 40px;
+  border-radius: 2rem;
+}
+
+.input-email{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+.botao{
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
 }
