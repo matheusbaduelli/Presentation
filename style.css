@@ -56,7 +56,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   border-radius: 50%;
 }
 
@@ -143,7 +142,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
     border-radius: 50%;
     
   }
