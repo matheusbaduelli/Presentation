@@ -61,8 +61,8 @@ body {
 }
 
 img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 
 .icons {
@@ -153,6 +153,7 @@ img {
   }
 
 
+
 }
 
 
@@ -165,7 +166,7 @@ img {
   justify-content: center;
   align-items: center;
   color: aliceblue;
-  font-size: 25px;
+  font-size: 20px;
   }
 
   .input{
