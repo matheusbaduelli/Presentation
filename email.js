@@ -12,6 +12,6 @@ botao.addEventListener("click", () => {
     }),
   })
     .then((response) => response.json())
-    .then((data) => console.log("Sucesso:", data))
+    .then(alert('Email enviado com sucesso'))
     .catch((error) => console.error("Erro:", error));
 });
