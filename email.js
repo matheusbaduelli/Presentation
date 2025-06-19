@@ -8,7 +8,7 @@ botao.addEventListener("click", () => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      to: envio,
+      to: envio.value,
     }),
   })
     .then((response) => response.json())
