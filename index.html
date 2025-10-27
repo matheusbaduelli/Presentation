@@ -27,7 +27,7 @@
     <div class="container" id="container">
       <div id="minhaDiv" class="minhaDiv"></div>
       <div class="div2" id="div2">
-        Olá, meu nome é Matheus, tenho 28 anos e sou natural de São Paulo.
+        Olá, meu nome é Matheus, tenho <span id="idade"></span> anos e sou natural de São Paulo.
         Atualmente, sou Analista de Processos e estou cursando Análise e
         Desenvolvimento de Sistemas. Minha paixão por tecnologia começou em
         2022, e desde então, venho me dedicando e evoluindo cada vez mais na
@@ -53,7 +53,7 @@
 
         <h3>Digite seu E-mail</h3>
 
-        <input type="text" class="input" placeholder="Digite seu email">
+        <input type="text" class="input" placeholder="Digite seu email" style="text-align: center; width: 350px;" />
 
         <button id="botao" class="botao">Clique aqui!</button>
       </div>
@@ -67,6 +67,25 @@
         /></a>
       </div>
     </div>
+
+    <script>
+      
+      const nascimento = new Date(1997, 6, 6);
+
+      const hoje = new Date();
+      let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+      const mesAtual = hoje.getMonth();
+      const diaAtual = hoje.getDate();
+
+      
+      if (mesAtual < nascimento.getMonth() || 
+        (mesAtual === nascimento.getMonth() && diaAtual < nascimento.getDate())) {
+        idade--;
+      }
+
+      document.getElementById("idade").textContent = idade;
+    </script>
 
     <script src="./script.js"></script>
     <script src="./email.js"></script>
