@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
@@ -20,52 +20,112 @@
     <title>Matheus Dev</title>
   </head>
   <body>
-    <div class="img">
-      <img class="img" src="image/1714757368105.jpeg" alt="image" />
-      <div class="img2"></div>
-    </div>
+    <header class="site-header">
+      <div class="nav">
+        <a class="logo" href="#">Matheus<span>Dev</span></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label
+          for="nav-toggle"
+          class="nav-toggle-label"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+        </label>
+        <nav class="nav-links">
+          <a href="#div2">Sobre</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#input-email" class="btn btn-small">CV</a>
+          <a href="#contact">Contato</a>
+
+        </nav>
+      </div>
+    </header>
+
     <div class="container" id="container">
-      <div id="minhaDiv" class="minhaDiv"></div>
+      <div class="img">
+        <img class="img" src="image/1714757368105.jpeg" alt="image" />
+      </div>
+      <div id="minhaDiv" class="minhaDiv">
+        <h1 id="animatedTitle" class="hero-title"></h1>
+        <p class="subtitle">
+          Desenvolvedor focado em construir soluções simples e performáticas.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://www.linkedin.com/in/matheuslimaati/" class="btn btn-primary">Fale comigo</a>
+          <a href="https://github.com/matheusbaduelli" class="btn btn-secondary">Ver projetos</a>
+        </div>
+      </div>
       <div class="div2" id="div2">
-        Olá, meu nome é Matheus, tenho <span id="idade"></span> anos e sou natural de São Paulo.
-        Atualmente, sou Analista de Processos e estou cursando Análise e
-        Desenvolvimento de Sistemas. Minha paixão por tecnologia começou em
-        2022, e desde então, venho me dedicando e evoluindo cada vez mais na
-        área. Ao longo dessa jornada, consegui adquirir e aprimorar algumas
-        habilidades que considero fundamentais para a minha formação
-        profissional, tais como:
+
         <ul>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-          <li>FastApi</li>
-          <li>Django</li>
-          <li>Pandas</li>
-          <li>Express</li>
-          <li>NestJs</li>
-          <li>NodeJs</li>
-          <li>Docker</li>
-          <li>HTML e CSS</li>
-          
+          <li>🚀 Apaixonado por tecnologia e movido pelo desafio de transformar ideias em soluções reais.</li>
+          <li>👨‍💼 Analista de Processos com foco em otimização, automação e eficiência.</li>
+          <li>💡 Formado em Análise e Desenvolvimento de Sistemas desde 2025.</li>
+          <li>💻 Experiência com Python, JavaScript, SQL, HTML, CSS.</li>
+          <li>🌱 Sempre em busca de aprendizado, evolução e novos desafios na área de desenvolvimento de software.</li>
         </ul>
 
-        Estou sempre em busca de novos conhecimentos e desafios, com o objetivo
-        de me tornar um profissional cada vez mais capacitado e atualizado nas
-        tecnologias que moldam o futuro.
+        <h2>“Não espere pelo futuro. Crie-o. Sua próxima grande inovação começa agora.” ✨</h2>
+
       </div>
 
+      <section class="features" id="skills">
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="icons/social.png" alt="Código" class="feature-icon" />
+            <h3>JavaScript</h3>
+            <p>Interatividade, animações leves e integrações.</p>
+          </div>
+          <div class="feature-card">
+            <img src="icons/social.png" alt="Back-end" class="feature-icon" />
+            <h3>Node.js</h3>
+            <p>APIs rápidas e escaláveis.</p>
+          </div>
+          <div class="feature-card">
+            <img src="icons/social.png" alt="Dados" class="feature-icon" />
+            <h3>SQL</h3>
+            <p>Consultas eficientes e modelagem.</p>
+          </div>
+          <div class="feature-card">
+            <img src="icons/social.png" alt="Containers" class="feature-icon" />
+            <h3>Docker</h3>
+            <p>Ambientes consistentes e portáveis.</p>
+          </div>
+          <div class="feature-card">
+            <img src="icons/social.png" alt="Python" class="feature-icon" />
+            <h3>Python</h3>
+            <p>Automação e análise com Pandas.</p>
+          </div>
+          <div class="feature-card">
+            <img src="icons/social.png" alt="Web" class="feature-icon" />
+            <h3>HTML/CSS</h3>
+            <p>Layouts responsivos e acessíveis.</p>
+          </div>
+        </div>
+      </section>
 
-      <div class="input-email">
+      <div class="input-email" id="input-email">
         <h2>Vou te enviar meu currículo</h2>
 
         <h3>Digite seu E-mail</h3>
 
-        <input type="text" class="input" placeholder="Digite seu email" style="text-align: center; width: 350px;" />
+        <input
+          type="text"
+          class="input"
+          placeholder="Digite seu email"
+          style="text-align: center; width: 350px"
+        />
 
         <button id="botao" class="botao">Clique aqui!</button>
       </div>
+
+      
+
+      <section class="cta-section" id="contact">
+        <h2>Vamos construir algo juntos?</h2>
+        <p>Aberto para oportunidades, freelas e colaborações.</p>
+      </section>
       <div class="div3">
-        
         <a href="https://www.linkedin.com/in/matheuslimaati/"
           ><img class="icons" src="icons/linkedin (1).png" alt="icon1"
         /></a>
@@ -75,8 +135,7 @@
       </div>
     </div>
 
-    <script>
-      
+    <!-- <script>
       const nascimento = new Date(1997, 6, 6);
 
       const hoje = new Date();
@@ -85,16 +144,35 @@
       const mesAtual = hoje.getMonth();
       const diaAtual = hoje.getDate();
 
-      
-      if (mesAtual < nascimento.getMonth() || 
-        (mesAtual === nascimento.getMonth() && diaAtual < nascimento.getDate())) {
+      if (
+        mesAtual < nascimento.getMonth() ||
+        (mesAtual === nascimento.getMonth() && diaAtual < nascimento.getDate())
+      ) {
         idade--;
       }
 
       document.getElementById("idade").textContent = idade;
-    </script>
+
+      
+    </script> -->
+
+    
 
     <script src="./script.js"></script>
     <script src="./email.js"></script>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contato</a>
+      </div>
+      <p>
+        © <span id="year"></span> Matheus Dev. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
