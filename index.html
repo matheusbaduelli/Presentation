@@ -1,178 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="icons/octopus (1).png" type="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus | Full Stack Developer</title>
 
-    <title>Matheus Dev</title>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="nav">
-        <a class="logo" href="#">Matheus<span>Dev</span></a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label
-          for="nav-toggle"
-          class="nav-toggle-label"
-          aria-label="Abrir menu"
-        >
-          <span></span>
-        </label>
-        <nav class="nav-links">
-          <a href="#div2">Sobre</a>
-          <a href="#skills">Habilidades</a>
-          <a href="#input-email" class="btn btn-small">CV</a>
-          <a href="#contact">Contato</a>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
 
-        </nav>
-      </div>
-    </header>
+  <!-- Fonts: Rajdhani (Tech/Titles) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet">
 
-    <div class="container" id="container">
-      <div class="img">
-        <img class="img" src="image/1714757368105.jpeg" alt="image" />
-      </div>
-      <div id="minhaDiv" class="minhaDiv">
-        <h1 id="animatedTitle" class="hero-title"></h1>
-        <p class="subtitle">
-          Desenvolvedor focado em construir soluções simples e performáticas.
-        </p>
-        <div class="hero-ctas">
-          <a href="https://www.linkedin.com/in/matheuslimaati/" class="btn btn-primary">Fale comigo</a>
-          <a href="https://github.com/matheusbaduelli" class="btn btn-secondary">Ver projetos</a>
-        </div>
-      </div>
-      <div class="div2" id="div2">
+  <link rel="icon" href="icons/octopus (1).png" type="image/png" />
+</head>
 
-        <ul>
-          <li>🚀 Apaixonado por tecnologia e movido pelo desafio de transformar ideias em soluções reais.</li>
-          <li>👨‍💼 Analista de Processos com foco em otimização, automação e eficiência.</li>
-          <li>💡 Formado em Análise e Desenvolvimento de Sistemas desde 2025.</li>
-          <li>💻 Experiência com Python, JavaScript, SQL, HTML, CSS.</li>
-          <li>🌱 Sempre em busca de aprendizado, evolução e novos desafios na área de desenvolvimento de software.</li>
-        </ul>
+<body>
 
-        <h2>“Não espere pelo futuro. Crie-o. Sua próxima grande inovação começa agora.” ✨</h2>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="logo" href="#">MATHEUS<span>DEV</span></a>
 
-      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu">
+        <span></span>
+      </label>
 
-      <section class="features" id="skills">
-        <div class="features-grid">
-          <div class="feature-card">
-            <img src="icons/social.png" alt="Código" class="feature-icon" />
-            <h3>JavaScript</h3>
-            <p>Interatividade, animações leves e integrações.</p>
-          </div>
-          <div class="feature-card">
-            <img src="icons/social.png" alt="Back-end" class="feature-icon" />
-            <h3>Node.js</h3>
-            <p>APIs rápidas e escaláveis.</p>
-          </div>
-          <div class="feature-card">
-            <img src="icons/social.png" alt="Dados" class="feature-icon" />
-            <h3>SQL</h3>
-            <p>Consultas eficientes e modelagem.</p>
-          </div>
-          <div class="feature-card">
-            <img src="icons/social.png" alt="Containers" class="feature-icon" />
-            <h3>Docker</h3>
-            <p>Ambientes consistentes e portáveis.</p>
-          </div>
-          <div class="feature-card">
-            <img src="icons/social.png" alt="Python" class="feature-icon" />
-            <h3>Python</h3>
-            <p>Automação e análise com Pandas.</p>
-          </div>
-          <div class="feature-card">
-            <img src="icons/social.png" alt="Web" class="feature-icon" />
-            <h3>HTML/CSS</h3>
-            <p>Layouts responsivos e acessíveis.</p>
-          </div>
-        </div>
-      </section>
+      <nav class="nav-links">
+        <a href="#mission">SOBRE</a>
+        <a href="#systems">SISTEMAS</a>
+        <a href="#projects">PROJETOS</a>
+        <a href="#transmission" class="btn-nav">CONTATO</a>
+      </nav>
+    </div>
+  </header>
 
-      <div class="input-email" id="input-email">
-        <h2>Vou te enviar meu currículo</h2>
-
-        <h3>Digite seu E-mail</h3>
-
-        <input
-          type="text"
-          class="input"
-          placeholder="Digite seu email"
-          style="text-align: center; width: 350px"
-        />
-
-        <button id="botao" class="botao">Clique aqui!</button>
-      </div>
-
-      
-
-      <section class="cta-section" id="contact">
-        <h2>Vamos construir algo juntos?</h2>
-        <p>Aberto para oportunidades, freelas e colaborações.</p>
-      </section>
-      <div class="div3">
-        <a href="https://www.linkedin.com/in/matheuslimaati/"
-          ><img class="icons" src="icons/linkedin (1).png" alt="icon1"
-        /></a>
-        <a href="https://github.com/matheusbaduelli"
-          ><img class="icons" src="./icons/social.png" alt="icon2"
-        /></a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- <p class="overline">SISTEMAS DE ALTA PERFORMANCE</p> -->
+      <h1 class="hero-title">PROJETANDO O<br>FUTURO DIGITAL</h1>
+      <p class="hero-subtitle">Desenvolvimento full-stack focado em performance, escalabilidade e impacto humano.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">PROJETOS</a>
+        <a href="#transmission" class="btn btn-outline">CONTATO</a>
       </div>
     </div>
+    <div class="hero-background">
+      <!-- Placeholder for abstract tech background or video -->
+      <div class="overlay"></div>
+    </div>
+  </section>
 
-    <!-- <script>
-      const nascimento = new Date(1997, 6, 6);
-
-      const hoje = new Date();
-      let idade = hoje.getFullYear() - nascimento.getFullYear();
-
-      const mesAtual = hoje.getMonth();
-      const diaAtual = hoje.getDate();
-
-      if (
-        mesAtual < nascimento.getMonth() ||
-        (mesAtual === nascimento.getMonth() && diaAtual < nascimento.getDate())
-      ) {
-        idade--;
-      }
-
-      document.getElementById("idade").textContent = idade;
-
-      
-    </script> -->
-
-    
-
-    <script src="./script.js"></script>
-    <script src="./email.js"></script>
-
-    <footer class="site-footer">
-      <div class="footer-links">
-        <a href="#about">Sobre</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#contact">Contato</a>
+  <!-- Mission Section (About) -->
+  <section id="mission" class="section mission">
+    <div class="container">
+      <div class="section-header">
+        <!-- <span class="section-number">01</span> -->
+        <h2 class="section-title">Quem sou eu?</h2>
       </div>
-      <p>
-        © <span id="year"></span> Matheus Dev. Todos os direitos reservados.
-      </p>
-    </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+      <div class="mission-content">
+        <div class="mission-text">
+          <h3>OLÁ EU SOU O MATHEUS.</h3>
+          <p>
+            Não espere pelo futuro. Crie-o.
+          </p>
+          <ul class="mission-stats">
+            <li>
+              <span class="stat-value">3+</span>
+              <span class="stat-label">ANOS DE EXP.</span>
+            </li>
+            <li>
+              <span class="stat-value">100%</span>
+              <span class="stat-label">COMMITMENT</span>
+            </li>
+            <li>
+              <span class="stat-value">∞</span>
+              <span class="stat-label">INOVAÇÃO</span>
+            </li>
+          </ul>
+        </div>
+        <div class="mission-image">
+          <!-- Using existing image with filter class -->
+          <img src="image\Gemini_Generated_Image_g5czmag5czmag5cz.png" alt="Matheus Profile"
+            class="profile-img grayscale-filter" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section (Skills) -->
+  <section id="systems" class="section systems">
+    <div class="container">
+      <div class="section-header">
+        <!-- <span class="section-number">02</span> -->
+        <h2 class="section-title">SISTEMAS</h2>
+      </div>
+
+      <div class="systems-grid">
+        <!-- Card 1 -->
+        <div class="system-card">
+          <div class="card-header">
+            <span class="tech-icon">JS</span>
+            <h3>FRONT</h3>
+          </div>
+          <p class="tech-name">JavaScript / HTML / CSS</p>
+          <p class="card-desc">Criação de layouts responsivos e interativos com precisão de pixel. Foco em usabilidade e
+            feedback visual.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="system-card">
+          <div class="card-header">
+            <span class="tech-icon">NODE</span>
+            <h3>BACK</h3>
+          </div>
+          <p class="tech-name">Node.js / Python</p>
+          <p class="card-desc">APIs escaláveis e microsserviços robustos. Processamento de dados eficiente para garantir
+            estabilidade.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="system-card">
+          <div class="card-header">
+            <span class="tech-icon">SQL</span>
+            <h3>DADOS</h3>
+          </div>
+          <p class="tech-name">SQL / Bancos de Dados</p>
+          <p class="card-desc">Modelagem de dados otimizada para integridade e velocidade de consulta.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="system-card">
+          <div class="card-header">
+            <span class="tech-icon">DOCKER</span>
+            <h3>IMPLANTAÇÃO</h3>
+          </div>
+          <p class="tech-name">Docker / DevOps</p>
+          <p class="card-desc">Ambientes consistentes e portáveis. Deploy rápido e confiável em qualquer infraestrutura.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Placeholder structure) -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header">
+        <!-- <span class="section-number">03</span> -->
+        <h2 class="section-title">PROJETOS</h2>
+      </div>
+
+      <div class="projects-list">
+        <div class="project-item">
+          <div class="project-info">
+            <h3>GITHUB</h3>
+            <p>Soluções para sistema de automação e processos.</p>
+            <a href="https://github.com/matheusbaduelli" class="btn-link">VER DADOS ></a>
+          </div>
+          <div class="project-visual"></div>
+        </div>
+        <!-- Add more projects here -->
+      </div>
+
+      <div class="center-cta">
+        <a href="https://github.com/matheusbaduelli" class="btn btn-outline">ACESSAR ARQUIVO COMPLETO (GITHUB)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transmission Section (Email) -->
+  <section id="transmission" class="section transmission">
+    <div class="container">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">(CV)</span>
+        </div>
+        <div class="terminal-body" id="input-email">
+          <p class="terminal-text">> INICIAR ENVIO...</p>
+          <p class="terminal-text">> DIGITE O DESTINO (E-MAIL):</p>
+
+          <div class="input-group">
+            <span class="prompt">$</span>
+            <input type="text" class="terminal-input" placeholder="user@company.com" />
+          </div>
+
+          <button id="botao" class="btn btn-primary full-width">ENVIAR DADOS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">MATHEUS<span>DEV</span></a>
+        <p class="copyright">© <span id="year"></span>. TODOS OS DIREITOS RESERVADOS.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/matheuslimaati/">LINKEDIN</a>
+        <a href="https://github.com/matheusbaduelli">GITHUB</a>
+        <a href="mailto:matheus@example.com">EMAIL</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./script.js"></script>
+  <script src="./email.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>

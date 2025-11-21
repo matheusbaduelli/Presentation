@@ -1,4 +1,4 @@
-const envio = document.querySelector(".input");
+const envio = document.querySelector(".terminal-input");
 const botao = document.getElementById("botao");
 
 botao.addEventListener("click", () => {
